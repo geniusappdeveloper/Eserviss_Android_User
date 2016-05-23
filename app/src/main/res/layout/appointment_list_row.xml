@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    
+    <RelativeLayout 
+    	android:id="@+id/rl_appointment_details"    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        >
+        <ImageView 
+            android:id="@+id/driver_profile_pic_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calender_imagethumbnail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/profileLogout"
+            />
+        
+        <RelativeLayout 
+            android:id="@+id/rl_driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/driver_profile_pic_appointment"
+            android:layout_toEndOf="@+id/driver_profile_pic_appointment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/driver_name_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+        
+		<RelativeLayout 
+            android:id="@+id/rl_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_driver_name"
+            android:layout_toRightOf="@+id/driver_profile_pic_appointment"
+            android:layout_toEndOf="@+id/driver_profile_pic_appointment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            >
+		    <ImageView 
+		        android:id="@+id/img_pickup"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/calender_pickuplocation_icon"
+                android:contentDescription="@string/pickup_location"
+		        
+		        />
+            <TextView
+                android:id="@+id/pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_pickup"
+                android:layout_toEndOf="@+id/img_pickup"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+        
+		<RelativeLayout 
+            android:id="@+id/rl_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_pickup"
+            android:layout_toRightOf="@+id/driver_profile_pic_appointment"
+            android:layout_toEndOf="@+id/driver_profile_pic_appointment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            >
+		    <ImageView 
+		        android:id="@+id/img_drop"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/calender_dropoff_icon"
+                android:contentDescription="@string/drop_location"
+		        
+		        />
+            <TextView
+                android:id="@+id/drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_drop"
+                android:layout_toEndOf="@+id/img_drop"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+        
+		<RelativeLayout 
+            android:id="@+id/rl_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_drop"
+            android:layout_toRightOf="@+id/driver_profile_pic_appointment"
+            android:layout_toEndOf="@+id/driver_profile_pic_appointment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            >
+		    <ImageView 
+		        android:id="@+id/img_distance"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/calender_miles_icon"
+                android:contentDescription="@string/distance"
+		        
+		        />
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_distance"
+                android:layout_toEndOf="@+id/img_distance"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+        
+		<RelativeLayout 
+            android:id="@+id/rl_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_distance"
+            android:layout_toRightOf="@+id/driver_profile_pic_appointment"
+            android:layout_toEndOf="@+id/driver_profile_pic_appointment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            >
+		    <ImageView 
+		        android:id="@+id/img_duration"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/calender_time_icon"
+                android:contentDescription="@string/duration"
+		        
+		        />
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_duration"
+                android:layout_toEndOf="@+id/img_duration"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+        
+		<RelativeLayout 
+            android:id="@+id/rl_apt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_duration"
+            android:layout_toRightOf="@+id/driver_profile_pic_appointment"
+            android:layout_toEndOf="@+id/driver_profile_pic_appointment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            >
+		    
+            <TextView
+                android:id="@+id/apt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+
+		<TextView
+		    android:id="@+id/amount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/driver_profile_pic_appointment"
+		    android:layout_alignStart="@+id/driver_profile_pic_appointment"
+		    android:layout_below="@+id/rl_distance"
+		    android:textColor="#000000"/>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

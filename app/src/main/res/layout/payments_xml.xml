@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/crd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/box_long"
+
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/credit_layout"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/credit_image"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_home"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/offer_layout"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/text_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text="5% OFFER"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/credit_layout"
+            android:gravity="center"
+            android:text="PROMO CREDIT"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/text_expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:layout_below="@+id/text_credit"
+            android:layout_toRightOf="@+id/credit_layout"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="valid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/crd_layout"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/add_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="ADD PAYMENT METHODS"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/cards_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/add_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/stripe_paypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cards_list_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/poweredby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by "
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_stripe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/poweredby"
+            android:layout_toEndOf="@+id/poweredby"
+            android:background="@drawable/selectpayment_stripe_icn" />
+
+        <TextView
+            android:id="@+id/and"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_stripe"
+            android:layout_toEndOf="@+id/img_stripe"
+            android:text=" and "
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/and"
+            android:layout_toEndOf="@+id/and"
+            android:background="@drawable/selectpayment_paypal_icn" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/add_promo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cards_list_view"
+        android:background="@drawable/box_long"
+
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/addpromo_layout"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/add_promo_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+
+                android:src="@drawable/logo_home" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_credit_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/addpromo_layout"
+            android:gravity="center"
+            android:text="ADD PROMO CARD"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"  />
+    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
+

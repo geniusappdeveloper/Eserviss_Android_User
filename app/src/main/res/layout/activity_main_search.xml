@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".SearchAddressGooglePlacesActivity" >
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F7F7F7" >
+
+        <RelativeLayout
+            android:id="@+id/back_per"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PICKUP LOCATION"
+            android:id="@+id/headertext"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/auto_complete_text_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_layout"
+
+
+        android:background="@android:color/darker_gray"
+        >
+        <ImageView 
+            android:id="@+id/search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+
+            />
+        
+        <com.eserviss.passenger.main.CustomAutoCompleteTextView
+            android:id="@+id/atv_places"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/search_img"
+            android:layout_toEndOf="@+id/search_img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/whiteround"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:popupBackground="#ffffff"
+            android:textColor="#000000" />
+        
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/search_address_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auto_complete_text_relative"
+        android:layout_marginTop="10dp" 
+        android:background="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        >
+    </ListView>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/search_address_listview"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+
+        android:background="@drawable/powered_by_google"
+        />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/relative_red_later"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:spb_color="#FF4444" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/relative_red_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:spb_color="#ff0000"
+            app:spb_sections_count="1" />
+    </RelativeLayout> -->
+
+    <ImageButton
+        android:id="@+id/btn_cancel_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/close_btn"
+        android:longClickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/relative_blue_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" >
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:spb_color="#10B8FF" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/request_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relative_blue_later"
+        android:layout_centerHorizontal="true"
+        android:text="@string/requesting"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

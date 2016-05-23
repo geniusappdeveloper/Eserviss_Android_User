@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     
+   android:background="#ffffff">
+
+    <RelativeLayout 
+         android:id="@+id/header_layout_credit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F7F7F7"
+         >
+    <ImageView 
+            android:id="@+id/menu_credit"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_launcher"/>
+    </RelativeLayout>
+   <RelativeLayout
+        android:id="@+id/backgroundlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout_credit"
+        android:background="#E6E6E6"
+        android:paddingLeft="10dp" >
+    
+    <RelativeLayout
+        android:id="@+id/crd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/box_long"
+       android:layout_margin="10dp"
+       >
+
+        <RelativeLayout
+            android:id="@+id/credit_layout"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true" 
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/credit_image"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                
+                android:layout_centerInParent="true" 
+                android:src="@drawable/logo_home"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/offer_layout"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/text_open"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="5% OFFER"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/credit_layout"
+            android:gravity="center"
+            android:text="CREDIT"
+          android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/crd_layout"
+      
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="ADD PAYMENT METHODS"
+            android:textColor="#000000"
+            android:textSize="16sp" 
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_crd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/add_layout"
+        android:background="@drawable/box_long"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/add_credit_layout"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/add_credit_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/box_line" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_credit_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/add_credit_layout"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="ADD CREDIT CARD"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"  />
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/add_promo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/add_crd_layout"
+        android:background="@drawable/box_long"
+       
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/addpromo_layout"
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/add_promo_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                
+                android:src="@drawable/logo_home" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_credit_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/addpromo_layout"
+            android:gravity="center"
+            android:text="ADD PROMO CARD"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"  />
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

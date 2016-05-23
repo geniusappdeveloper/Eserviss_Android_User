@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <RelativeLayout 
+        android:id="@+id/add_card_rel_fotter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fotter_payment_selector">
+        
+        <ImageView
+            android:id="@+id/add_card_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+
+            android:background="@android:color/transparent"
+
+            android:src="@drawable/box_line"/>
+        
+        <TextView 
+            android:id="@+id/text_add_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD CREDIT CARD"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toRightOf="@+id/add_card_btn"
+            android:layout_toEndOf="@+id/add_card_btn"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="15dp"
+            />
+        
+        
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

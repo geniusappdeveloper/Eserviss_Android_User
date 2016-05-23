@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:alpha="0.4"
+        android:background="@drawable/progressround">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dip"
+
+            android:layout_marginTop="20dp"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar2"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:text="Waiting for driver... \n Tap to Cancel"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</RelativeLayout>

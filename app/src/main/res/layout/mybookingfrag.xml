@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ListView
+        android:id="@+id/lvBookings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:divider="#adadad"
+        android:dividerHeight="1dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:scrollbarSize="0dp"
+        android:verticalScrollbarPosition="defaultPosition">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvMonthName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="FEBURARY"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:gravity="start|left"
+        android:visibility="gone"
+        android:layout_margin="10dp"/>
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:background="#F7F7F7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget_pass_Tv"
+        android:text="Forgot Password ?"
+        android:gravity="center"
+        android:textColor="#555"
+        android:textStyle="bold"
+
+        android:textSize="18sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_pass_Tv"
+        android:id="@+id/fortext"
+        android:textColor="#555"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/waitforsomtim"
+        android:gravity="center"
+        android:layout_margin="10dp"
+
+
+
+        />
+
+
+    <EditText android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:id="@+id/et_verificationcode"
+        android:layout_below="@+id/fortext"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/border_su"
+
+
+        />
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/booknwltr"
+        android:layout_below="@id/email"
+        android:layout_marginTop="30dp"
+        android:id="@+id/divder"
+
+        />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_verificationcode"
+        android:orientation="horizontal"
+    android:layout_margin="20dp"
+        android:weightSum="2" >
+
+
+
+        <Button
+            android:id="@+id/okButton"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/requestpick_shape"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:id="@+id/location_divider"
+            android:layout_width="5dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/requestpick_shape"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

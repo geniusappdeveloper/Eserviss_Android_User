@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_smoke">#F5F5F5</color>
+    <color name="red">#FF4444</color>
+    <color name="blue">#10B8FF</color>
+    <color name="login">#f6c60c</color>
+    <color name="spinnerItem">#AAAAAA</color>
+    <color name="buttonText">#EEEEEE</color>
+    <color name="headerText">#EEEEEE</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_item_title">#fff</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="green">#006600</color>
+    <color name="grey">#606060</color>
+    <color name="lightgrey">#A0A0A0</color>
+    <color name="lightgrey1">#E0E0E0</color>
+    <color name="background_color">#eef3f5</color>
+    <color name="dark_orange">#FF8C00</color>
+    <color name="yellowrequestpick">#FCB215</color>
+    <color name="paypal">#002c8a</color>
+    <color name="stroke">#000</color>
+    <color name="grey_dark">#fff</color>
+    <color name="grey_light">#ddd</color>
+    <color name="app_color">#00427a</color>
+    <color name="sininselected">#141414</color>
+    <color name="actionbarcolor">#F7F7F7</color>
+    <color name="booknwltr">#AAAAAA</color>
+
+</resources>
