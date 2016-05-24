@@ -6623,6 +6623,8 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 							driver_on_the_way_marker = googleMap.addMarker(new MarkerOptions().position(latLng)
 									.icon(BitmapDescriptorFactory.fromResource(R.drawable.car)).rotation(0)
 									.flat(true));
+
+
 							//========================My change==========================
 						/*	driver_on_the_way_marker = googleMap.addMarker(new MarkerOptions().position(latLng)
 									.icon(BitmapDescriptorFactory.fromResource(R.drawable.home_caricon))
@@ -6773,7 +6775,10 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						}
 
 						//Plot the polyline from pickup location to destination location
-						if(session.getDropofflat()!=null && session.getDropofflng()!=null)
+						//===========My Change Journey Pin Problem 23/May/2016 ====================
+						if(session.getDropofflat()!=null &&Double.parseDouble(session.getDropofflat())!=0.0&& session.getDropofflng()!=null)
+							//===========My Change Journey Pin Problem 23/May/2016 ====================
+					//	if(session.getDropofflat()!=null && session.getDropofflng()!=null)
 						{
 
 							LatLng latLng=new LatLng(Double.parseDouble(session.getDropofflat()),Double.parseDouble(session.getDropofflng()));
@@ -6875,8 +6880,11 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 							googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17.0f));
 						}
 
-						//Plot the polyline from pickup to destination  
-						if(session.getDropofflat()!=null && session.getDropofflng()!=null)
+						//Plot the polyline from pickup to destination
+						//===========My Change Journey Pin Problem 23/May/2016 ====================
+						if(session.getDropofflat()!=null &&Double.parseDouble(session.getDropofflat())!=0.0&& session.getDropofflng()!=null)
+                      //===========My Change Journey Pin Problem 23/May/2016 ====================
+						//	if(session.getDropofflat()!=null && session.getDropofflng()!=null)
 						{
 							LatLng latLng=new LatLng(Double.parseDouble(session.getDropofflat()),Double.parseDouble(session.getDropofflng()));
 							googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17.0f));
@@ -6890,7 +6898,8 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 							Utility.printLog("getMapsApiDirectionsFromTourl ="+url);
 
 							ReadTask downloadTask = new ReadTask();
-							downloadTask.execute(url);*/	
+							downloadTask.execute(url);*/
+
 						}
 						if(session.getPickuplat()!=null && session.getPickuplng()!=null)
 						{
@@ -6901,6 +6910,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 									.icon(BitmapDescriptorFactory.fromResource(R.drawable.home_markers_pickup))
 									.rotation(0)
 									.flat(true));
+
 
 						}
 
@@ -8309,13 +8319,13 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 				googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
 
-				//googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,18f));
-
-				//googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
 
 
 				marker_map_on_the_way.get(filterResponse.getChn()).setRotation(rotation_angle);
 				marker_map_on_the_way.get(filterResponse.getChn()).setPosition(latLng);
+				//======================My Change Car rotation==================//
+				animateMarker(marker_map_on_the_way.get(filterResponse.getChn()), latLng);
+				//======================My Change Car rotation==================//
 			}								
 		}
 
@@ -8368,6 +8378,10 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 				//googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,18f));
 				marker_map_arrived.get(filterResponse.getChn()).setRotation(rotation_angle);
 				marker_map_arrived.get(filterResponse.getChn()).setPosition(latLng);
+				//======================My Change Car rotation==================//
+				animateMarker(marker_map_arrived.get(filterResponse.getChn()), latLng);
+				//======================My Change Car rotation==================//
+
 			}
 		}
 
@@ -8416,6 +8430,9 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 				marker_map_arrived.get(filterResponse.getChn()).setRotation(rotation_angle);
 				marker_map_arrived.get(filterResponse.getChn()).setPosition(latLng);
+				//======================My Change Car rotation==================//
+				animateMarker(marker_map_arrived.get(filterResponse.getChn()), latLng);
+				//======================My Change Car rotation==================//
 			}
 		}
 	}
