@@ -655,12 +655,19 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 														
 														if(filterResponse.getTypes().get(i).getType_name().equals(response.getCarsdetails().get(j).getType_name()))
 														{
-															newCarTypesFound = false;
+															//newCarTypesFound = false;
+
+															//MY CHANGE CAR CHANGE INVERSE
+															newCarTypesFound = true;
+															//
 															break;
 														}
 														else
 														{
-															newCarTypesFound = true;
+															//newCarTypesFound = true;
+															//MY CHANGE CAR CHANGE INVERSE
+															newCarTypesFound = false;
+															//
 														}
 													}
 
@@ -672,7 +679,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 
 											Utility.printLog("NEW CAR TYPES FOUND status: "+newCarTypesFound);
-
+											Log.e("Session STAtus",""+newCarTypesFound);
 											if(newCarTypesFound)
 											{
 												// rahul : commented this
@@ -698,6 +705,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 												firstTimeMarkersPlotting = true;
 
 												session.storeCarTypes(message.toString());
+												Log.e("Session Storage",""+message);
 
 												Utility.printLog("INSIDE DRIVERS AROUND YOU CAR TYPES CHANGED");
 
@@ -3926,11 +3934,14 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 		Log.i("Loginres",jsonResponse);
 		Utility.printLog("LoginResponse="+jsonResponse);
 
-		if(jsonResponse!=null)
-		{
+		if(jsonResponse!=null) {
 			Gson gson = new Gson();
-			response=gson.fromJson(jsonResponse, LoginResponse.class);
-			Log.i("responce before is","LoginResponce "+response.getCarsdetails());
+			response = gson.fromJson(jsonResponse, LoginResponse.class);
+
+		/*	for (int i = 0; i <response.getCarsdetails().size(); i++)
+			{
+				Log.e("responce before is", "CarDetails " + response.getCarsdetails().get(i).getType_name());
+		}*/
 	/*		//=================My Change Car types Inverse========================
            ArrayList<CarsDetailList> arr = new ArrayList<CarsDetailList>();
 			Log.i("responce is","LoginResponce "+response);
@@ -7427,6 +7438,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						//	dialog2.dismiss();
 						dialog2=null;
 					}
+					Log.e("Cardetails Res",""+response);
 					Utility.printLog("Success of getting user App Info="+response);
 					getAppStatus(response);
 				}
@@ -9449,6 +9461,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 			}
 			Utility.printLog(" ","GetCards: "+jsonResponse);
 			Utility.printLog(" ",jsonResponse);
+			Log.e("Drop off" ,""+jsonResponse);
 
 			if(jsonResponse!=null) 
 			{
