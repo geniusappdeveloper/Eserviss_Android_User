@@ -551,7 +551,9 @@ public class PaymentFragment extends Fragment implements OnClickListener,OnItemC
 			@Override
 			public void onErrorResponse(VolleyError error)
 			{
-				dialogL.dismiss();
+				if (dialogL.isShowing()) {
+					dialogL.dismiss();
+				}
 				Toast.makeText(getActivity(), "System error in getting user Info please retry", Toast.LENGTH_LONG).show();
 				Utility.printLog("Error for volley");
 				System.out.println("Credit RESPONSE1"+error);

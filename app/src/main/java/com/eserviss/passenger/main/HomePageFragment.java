@@ -86,6 +86,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.view.Window;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
@@ -120,6 +121,7 @@ import com.eserviss.passenger.pojo.TipResponse;
 import com.eserviss.passenger.pubnu.pojo.PubNubResponse;
 import com.eserviss.passenger.pubnu.pojo.PubnubResponseNew;
 import com.log.LogFile;
+import com.special.ResideMenu.ResideMenu;
 import com.squareup.picasso.Picasso;
 import com.threembed.utilities.CircleTransform;
 import com.threembed.utilities.MyEventBus;
@@ -280,6 +282,8 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 	TextView car_color,seater,booking_id,pageno;
 	ImageView logo,image_home;
 
+
+	RelativeLayout map_view;
 	//====================My change====================
 	@SuppressWarnings("unchecked")
 	private void _publish(final String channel,String message)
@@ -777,7 +781,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 											//Txt_Pickup.setTextSize(20f);
                                             rate_unit.setVisibility(View.INVISIBLE);
-											pickup_Distance.setVisibility(View.INVISIBLE);
+											pickup_Distance.setVisibility(View.GONE);
 											pubnubProgressDialog.setVisibility(View.INVISIBLE);
 											Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
 											Utility.printLog("INSIDE DRIVERS NOT FOUND 1");
@@ -840,7 +844,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 															distance = getResources().getString(R.string.nocabs);
 															//Txt_Pickup.setTextSize(20f);
-															pickup_Distance.setVisibility(View.INVISIBLE);
+															pickup_Distance.setVisibility(View.GONE);
 															rate_unit.setVisibility(View.GONE);
 															pubnubProgressDialog.setVisibility(View.INVISIBLE);
 															Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -1012,7 +1016,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 												distance =getResources().getString(R.string.nocabs);
 												//Txt_Pickup.setTextSize(20f);
-												pickup_Distance.setVisibility(View.INVISIBLE);
+												pickup_Distance.setVisibility(View.GONE);
 												rate_unit.setVisibility(View.GONE);
 												pubnubProgressDialog.setVisibility(View.INVISIBLE);
 												Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -1046,7 +1050,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 											distance =getResources().getString(R.string.nocabs);
 											//Txt_Pickup.setTextSize(20f);
-											pickup_Distance.setVisibility(View.INVISIBLE);
+											pickup_Distance.setVisibility(View.GONE);
 											rate_unit.setVisibility(View.GONE);
 											pubnubProgressDialog.setVisibility(View.INVISIBLE);
 											Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -1888,6 +1892,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 		logo= (ImageView) getActivity().findViewById(R.id.logo);
 		pageno= (TextView) getActivity().findViewById(R.id.current_page_name);
 
+
 		//=======================My change==========================
 		image_home= (ImageView) v.findViewById(R.id.image_home);
 		farePromoLayouy=(RelativeLayout)v.findViewById(R.id.fare_promo_layouy);
@@ -2197,7 +2202,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 
@@ -2237,7 +2242,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
 						Utility.printLog("INSIDE DRIVERS NOT FOUND 3");
@@ -2299,7 +2304,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 
@@ -2338,7 +2343,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
 						Utility.printLog("INSIDE DRIVERS NOT FOUND 4");
@@ -2403,7 +2408,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						}
 						else
 						{
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 						}
 
@@ -2440,7 +2445,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						{
 							distance = getResources().getString(R.string.nocabs);
 							//Txt_Pickup.setTextSize(20f);
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 							Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
 							Utility.printLog("INSIDE DRIVERS NOT FOUND 5");
@@ -2448,7 +2453,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 						pubnubProgressDialog.setClickable(false);
 						pubnubProgressDialog.setVisibility(View.VISIBLE);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 						if( response.getCarsdetails()!=null &&  response.getCarsdetails().size()>0)
 						{
@@ -2497,7 +2502,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						}
 						else
 						{
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							pickup_Distance.setVisibility(View.GONE);
 						}
 
@@ -2534,7 +2539,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						{
 							distance =getResources().getString(R.string.nocabs);
 							//Txt_Pickup.setTextSize(20f);
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 							Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
 							Utility.printLog("INSIDE DRIVERS NOT FOUND 6");
@@ -2542,7 +2547,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 						pubnubProgressDialog.setClickable(false);
 						pubnubProgressDialog.setVisibility(View.VISIBLE);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						if( response.getCarsdetails()!=null &&  response.getCarsdetails().size()>0)
@@ -2665,8 +2670,8 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
 						pickup_Distance.setVisibility(View.GONE);
+						rate_unit.setVisibility(View.GONE);
 					}
 
 					/*pubnubProgressDialog.setClickable(false);
@@ -2710,7 +2715,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -2774,7 +2779,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 
@@ -2818,7 +2823,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -2882,7 +2887,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 
@@ -2927,7 +2932,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -2993,7 +2998,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						}
 						else
 						{
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							pickup_Distance.setVisibility(View.GONE);
 						}
 						/*pubnubProgressDialog.setClickable(false);
@@ -3035,7 +3040,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						{
 							distance = getResources().getString(R.string.nocabs);
 							//Txt_Pickup.setTextSize(20f);
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 
 							Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -3093,7 +3098,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						}
 						else
 						{
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 						}
 
@@ -3134,7 +3139,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						{
 							distance = getResources().getString(R.string.nocabs);
 							//Txt_Pickup.setTextSize(20f);
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 
 							Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -3192,7 +3197,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						}
 						else
 						{
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 						}
 
@@ -3233,7 +3238,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						{
 							distance = getResources().getString(R.string.nocabs);
 							//Txt_Pickup.setTextSize(20f);
-							pickup_Distance.setVisibility(View.INVISIBLE);
+							pickup_Distance.setVisibility(View.GONE);
 							rate_unit.setVisibility(View.GONE);
 
 							Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -3382,7 +3387,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 					/*pubnubProgressDialog.setClickable(false);
@@ -3422,7 +3427,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -3487,7 +3492,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 
@@ -3530,7 +3535,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -3597,7 +3602,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 
@@ -3642,7 +3647,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
 						Utility.printLog("INSIDE DRIVERS NOT FOUND 15");
@@ -3709,7 +3714,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					}
 					else
 					{
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 					}
 					/*pubnubProgressDialog.setClickable(false);
@@ -3751,7 +3756,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 					{
 						distance = getResources().getString(R.string.nocabs);
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -3832,6 +3837,10 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 		initializeVariables(view);
 
 		view.setOnTouchListener(this);
+
+
+
+
 		//googleMap=((SupportMapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 		/*googleMap = ((SupportMapFragment) getActivity().getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
 
@@ -3842,6 +3851,11 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 		SupportMapFragment fm = (SupportMapFragment)getChildFragmentManager().findFragmentById(R.id.map);
 		googleMap=fm.getMap();
+
+		ResideMenuActivity parentActivity = (ResideMenuActivity) getActivity();
+		final ResideMenu  resideMenu = parentActivity.getResideMenu();
+		resideMenu.addIgnore(fm.getView());
+
 		googleMap.setMyLocationEnabled(true);
 		googleMap.getUiSettings().setZoomControlsEnabled(false);
 		//=======================================My Change==============================
@@ -3916,8 +3930,8 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 		{
 			Gson gson = new Gson();
 			response=gson.fromJson(jsonResponse, LoginResponse.class);
-
-			//=================My Change Car types Inverse========================
+			Log.i("responce before is","LoginResponce "+response.getCarsdetails());
+	/*		//=================My Change Car types Inverse========================
            ArrayList<CarsDetailList> arr = new ArrayList<CarsDetailList>();
 			Log.i("responce is","LoginResponce "+response);
 
@@ -3932,7 +3946,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 			response.setCarsdetails((arr));
 			Log.e("responce is","After "+response.getCarsdetails().get(0).getType_name());
 			Log.e("responce is","after "+response.getCarsdetails().get(1).getType_name());
-			//=================My Change Car types Inverse========================
+			//=================My Change Car types Inverse========================*/
 
 			if(response.getCarsdetails()!=null && response.getCarsdetails().size()>0)
 			{
@@ -4786,7 +4800,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 				//relative_now_later_status.setVisibility(View.GONE);
 				//new BackgroundGetCards().execute();
 				isBackPressed=true;
-				show_address_relative.setVisibility(View.INVISIBLE);
+				show_address_relative.setVisibility(View.GONE);
 				Txt_Pickup.setVisibility(View.INVISIBLE);
 				pickup.setVisibility(View.INVISIBLE);
 				//setLocationArrow.setVisibility(View.INVISIBLE);
@@ -6691,7 +6705,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						//Removing buttons on screen
 						Driver_Confirmation.setVisibility(View.VISIBLE);
 						//Rl_distance_time.setVisibility(View.VISIBLE);
-						show_address_relative.setVisibility(View.INVISIBLE);
+						show_address_relative.setVisibility(View.GONE);
 						pickup.setVisibility(View.INVISIBLE);
 						//setLocationArrow.setVisibility(View.INVISIBLE);
 						Txt_Pickup.setVisibility(View.INVISIBLE);
@@ -6814,7 +6828,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 						Driver_Name.setText(session.getDocName());
 						Driver_Confirmation.setVisibility(View.VISIBLE);
-						show_address_relative.setVisibility(View.INVISIBLE);
+						show_address_relative.setVisibility(View.GONE);
 						pickup.setVisibility(View.INVISIBLE);
 						//setLocationArrow.setVisibility(View.INVISIBLE);
 						Txt_Pickup.setVisibility(View.INVISIBLE);
@@ -6945,7 +6959,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						Driver_Confirmation.setVisibility(View.VISIBLE);
 						//Driver_Arrow.setVisibility(View.INVISIBLE);
 						cancel_trip.setVisibility(View.INVISIBLE);
-						show_address_relative.setVisibility(View.INVISIBLE);
+						show_address_relative.setVisibility(View.GONE);
 						pickup.setVisibility(View.INVISIBLE);
 						//setLocationArrow.setVisibility(View.INVISIBLE);
 						Txt_Pickup.setVisibility(View.INVISIBLE);
@@ -7849,7 +7863,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						distance = getResources().getString(R.string.nocabs);
 						Type1Distance="";
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -7970,7 +7984,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						distance = getResources().getString(R.string.nocabs);
 						Type2Distance = "";
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -8070,7 +8084,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						distance = getResources().getString(R.string.nocabs);
 						Type3Distance = "";
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));
@@ -8157,7 +8171,7 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 						distance = getResources().getString(R.string.nocabs);
 						Type4Distance = "";
 						//Txt_Pickup.setTextSize(20f);
-						pickup_Distance.setVisibility(View.INVISIBLE);
+						pickup_Distance.setVisibility(View.GONE);
 						rate_unit.setVisibility(View.GONE);
 
 						Txt_Pickup.setText(getResources().getString(R.string.no_drivers_found));

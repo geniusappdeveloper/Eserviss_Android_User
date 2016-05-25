@@ -247,6 +247,12 @@ public class ResideMenu extends FrameLayout{
             disabledSwipeDirection.remove(direction);
         }
     }
+
+    public void addIgnore(View view){
+       ignoredViews.add(view);
+    }
+
+
     private void setScaleDirection(int direction){
 
         int screenWidth = getScreenWidth();
@@ -484,6 +490,9 @@ public class ResideMenu extends FrameLayout{
                 }
 
                 break;
+
+
+
 
         }
         lastRawX = ev.getRawX();

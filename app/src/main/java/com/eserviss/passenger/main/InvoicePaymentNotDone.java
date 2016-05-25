@@ -105,7 +105,7 @@ public class InvoicePaymentNotDone extends Activity implements OnClickListener
 		invoice_subtotal_txt.setTypeface(roboto_condensed);
 		invoice_newsubtotal_txt.setTypeface(roboto_condensed);
 		invoice_total_txt.setTypeface(roboto_condensed);
-		txt_rating.setTypeface(roboto_condensed);
+		//txt_rating.setTypeface(roboto_condensed);
 		//=========================================================================
 		RL_Invoice.setOnClickListener(this);
 		Done.setOnClickListener(this);

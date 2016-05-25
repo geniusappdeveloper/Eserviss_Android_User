@@ -96,7 +96,7 @@ public class ResideMenuActivity extends FragmentActivity implements ResideMenuIt
 		setUpMenu();
 		if (savedInstanceState == null)
 			changeFragment(new HomePageFragment());
-		resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
+		//resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
 
 		filter = new IntentFilter();
 		filter.addAction("com.threembed.roadyo.internetStatus");
@@ -175,6 +175,8 @@ public class ResideMenuActivity extends FragmentActivity implements ResideMenuIt
 			}
 		});
 		//=========================My Change========================
+
+
 	}
 
 	@Override
@@ -332,6 +334,7 @@ public class ResideMenuActivity extends FragmentActivity implements ResideMenuIt
 	private void displayView(int position) 
 	{
 //================================My Change===================================
+		resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
 		page_name.setVisibility(View.INVISIBLE);
 		logo.setVisibility(View.VISIBLE);
 		//===============My Change====================
@@ -357,7 +360,7 @@ public class ResideMenuActivity extends FragmentActivity implements ResideMenuIt
 			{
 			case 0:
 				currentTabStatus=0;
-				resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
+				//resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
 				changeFragment(new HomePageFragment());
 				break;
 
@@ -380,7 +383,7 @@ public class ResideMenuActivity extends FragmentActivity implements ResideMenuIt
 				break;
 			case 4:
 				currentTabStatus=4;
-				resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
+				//resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
 				changeFragment(new HomePageFragment());
 				break;
 
@@ -614,7 +617,7 @@ public class ResideMenuActivity extends FragmentActivity implements ResideMenuIt
 			logo.setVisibility(View.VISIBLE);
 			
 			currentTabStatus=0;
-			resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
+			//resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_LEFT);
 			changeFragment(new HomePageFragment());
 		}
 	}

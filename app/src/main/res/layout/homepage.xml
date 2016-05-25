@@ -5,23 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <fragment
         android:id="@+id/map"
         class="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
+
         android:layout_height="match_parent" />
 
 
-    <!--<Button
-        android:id="@+id/invoice_driver_tip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="5dp"
-        android:background="@drawable/back_button"
-        android:text="@string/driver_tip"
-        android:textColor="@drawable/white_to_black_text" />-->
+
 
     <RelativeLayout
         android:id="@+id/show_address_relative"
@@ -799,7 +792,7 @@
         android:layout_above="@+id/textviewmidpoint"
         android:layout_centerInParent="true"
 
-           android:layout_marginBottom="-15dp"
+           android:layout_marginBottom="-10dp"
         android:layout_marginLeft="10dp"
         android:background="@drawable/map_icn_currentlocation" />
 
