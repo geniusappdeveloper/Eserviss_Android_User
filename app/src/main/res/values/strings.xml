@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"> Eserviss Driver</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="invittext">Invite other drivers to signup with  Eserviss Driver and we will provide you with some loyalty points.</string>
+
+    <!-- splahs activity text -->
+    <string name="splahs_text">Splahs</string>
+    
+    <string name="systemcal">SYSTEM CALCULATED FARE</string>
+    
+    <string name="notavailable">OFF THE JOB</string>
+    
+    <string name="nopenndingappointment">NO PENDING BOOKINGS</string>
+    <string name="todaybookings">SCHEDULE</string>
+    
+    <string name="jobid">JOB ID :</string>
+    <string name="now">Now</string>
+    <string name="later">Later</string>
+    <string name="imontheway">ON THE WAY</string>
+
+
+    <string name="first_name_field">Please enter your first name.</string>
+    <string name="phone_no_field">Please enter your Phone no.</string>
+    <string name="email_field">Please enter your Email id.</string>
+    <string name="password_field">Please enter your password.</string>
+    <string name="checkbox_field">Please select terms and conditions.</string>
+
+
+    <!-- signup string -->
+    <string name="companytype">Company id</string>
+    <string name="companyname">Company Name</string>
+    <string name="seatingcapacity">Seating Capacity :</string>
+    <string name="firstname">First Name *</string>
+    <string name="lastname">Last Name</string>
+    <string name="mobileno">Mobile No. </string>
+    <string name="email">Email *</string>
+      <string name="mobilenopro">Mobile No :</string>
+    <string name="emailpro">Email :</string>
+    <string name="password">Password *</string>
+    <string name="driverlicence">Driver Licence :</string>
+    <string name="expirydate">Expiry Date :</string>
+    <string name="emailbodytext">Please update my account status</string>
+    <string name="accountdetails">Account details are :</string>
+    <string name="putsubject">Request for Activation</string>
+      
+    <string name="online">GO ONLINE</string>
+    <string name="offline">GO OFFLINE</string>
+      
+    <string name="available">ON THE JOB</string>
+      
+    <string name="selectphoto">Select Photo From :</string>
+    <string name="gallery">Choose from Gallery</string>
+    
+    <string name="removephoto">Remove profile photo</string>
+    
+    <string name="camera">Take Photo</string>
+    <string name="pickup">PICKUP LOCATION :</string>
+    <string name="dropoff">DROPOFF LOCATION :</string>
+    
+    <string name="pickuploc">Pickup Location</string>
+    <string name="dropoffloc">Dropoff Location</string>
+    <string name="distance">DISTANCE</string>
+    <string name="duration">DURATION</string>
+    <string name="avgspeed">WAITING TIME</string>
+    <string name="rs">00.00</string>
+    <string name="time">Time</string>
+    <string name="time_text">TIME :</string>
+    <string name="rateyourride">RATE YOUR RIDE</string>
+    
+    <string name="zipecode">Zipcode</string>
+    
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="licencenumber">Tax Number</string>
+    <string name="register">REGISTER</string>
+    <string name="entemailid">Enter your Email id</string>
+    <string name="pleaseenteremailid">Please Enter Email Id</string>
+    <string name="pleaseentervalidemailid">Please Enter Valid Email</string>
+    <string name="accepttermandcondition">By creating an account you agree to the</string>
+     <string name="termesandcon">Terms and Conditions</string>
+    <string name="createaccount">CREATE AN ACCOUNT</string>
+    <string name="back">BACK</string>
+    <string name="miles">KM</string>
+    <string name="accept">ACCEPT</string>
+    <string name="reject">REJECT</string>
+    
+    <string name="prompt">Select Car Type</string>
+    <string name="promptSelect">Select Company Type</string>
+    <string name="seatetype">Select No Of Seates</string>
+    <string name="okbuttontext">Ok</string>
+    <string name="fieldnotempty">Field cannot be empty</string>
+    <string name="passwrdnotmatch">Error in confirmation password.</string>
+    <string name="passwordstrength">Password Strength : LOW. Should contain A-Z,a-z,0-9,_,@</string>
+    <string name="passwordstrengthlow">Password Strength : LOW.</string>
+    <string name="invalidemail">Invalid Email format.</string>
+    <string name="faq">SUPPORT</string>
+    
+    <string name="firstpoint">First Point</string>
+    <string name="secondpoint">Second Point</string>
+    
+    <string name="paymentnot">NOT PAID</string>
+    <string name="paydone">PAID</string>
+    <string name="dispute">DISPUTE RAISED</string>
+    <string name="closed">CLOSED</string>
+
+    <!-- string for login -->
+    <string name="submit">Submit</string>
+    <string name="signin">SIGN IN</string>
+    <string name="carid">Car ID</string>
+    <string name="forgotpassword">Forgot Password</string>
+    
+    <string-array name="cartypestringarray">
+        <item>Gold</item>
+        <item>Silver</item>
+    </string-array>
+    <string-array name="seatcapacityarray">
+        <item>3</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="cancle">Cancel</string>
+
+    <!-- volley erorr code -->
+    <string name="generic_server_down">Server Down</string>
+    <string name="internetconnectionmessage">working internet connection required</string>
+    <string name="plesecheckinternetconnection">Please check internet connection </string>
+    <string name="servererror">Some thing went wrong !</string>
+    <string name="Pleasewaitmessage">Please Wait…</string>
+    <string name="signupmassege">Signing up...</string>
+    <string name="loginmassege">Logging in...</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="messagetitle">Message</string>
+    <string name="messageforreject">Are you sure you want to reject?</string>
+    <string name="cancelbutton">CANCEL</string>
+    <string name="logout">Logout</string>
+    <string name="logoutmessage">Are you sure you want to log out?</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="resetpasswordmessage">Are you sure you want to reset your password?</string>
+    <string name="ontheway">ON THE WAY</string>
+    <string name="newbooking">GET NEW BOOKING</string>
+    <string name="notifypassenger">Get Pushed notified for</string>
+    <string name="newbookingrequest">new booking request</string>
+    <string name="yourareontheway">you are on the way</string>
+    <string name="driverarrived">DRIVER ARRIVED</string>
+    <string name="notifypassengerwhen">Notify passenger when</string>
+    <string name="youarrived">you arrived</string>
+    <string name="passengerdrop">DROP PASSENGER</string>
+    <string name="raiseinvoicegetpaid">Raise the invoice and get paid</string>
+    <string name="ondroppingthepassenger">on dropping the passenger</string>
+    <string name="rate">RATE</string>
+    <string name="helpustorateby">Help us to rate by</string>
+    <string name="ourcustomers">our customers</string>
+    <string name="magegeschedul">MANAGE SCHEDULES</string>
+    <string name="rateurcustomer">RATE YOUR CUSTOMER</string>
+    <string name="passengercancelled">Passenger cancelled booking</string>
+     
+    <string name="invoce">INVOICE</string>
+    <string name="raiseandinvoceandgetpai">Raise an invoice and get paid</string>
+    <string name="onappointmentcompletment">on appointment completion</string>
+    <string name="viewpending">View all your pending</string>
+    <string name="penddingappointment">Appointments</string>
+     <string name="notessupport">NOTES</string>
+     <string name="takeantesforyour">Take notes for your</string>
+     <string name="driverdotcom"> eserviss.in</string>
+     <string name="haveanissues">Have an issue visit</string>
+     <string name="bookingidtext">BID :</string>
+     <string name="distances">DIST :</string>
+
+     <string name="donotcharge">Do not charge client</string>
+     <string name="clientnotshow">Client-no show</string>
+     <string name="clientrequestedcancel">Client requested cancel</string>
+     <string name="wrongaddressshown">Wrong address shown</string>
+     <string name="other">Other</string>
+     <string name="dontcancettrip">Do not cancel trip</string>
+     <string name="whyareyoucanceling">Why are you cancelling?</string>
+
+    <string name="timetextview">Appointment Time</string>
+    <string name="passengermsg">Passenger Message</string>
+    <string name="phoneno">Phone No. *</string>
+     <string name="date">Date of appointment</string>
+     <string name="appointmentaddress">address</string>
+     <string name="appointmentcompleted"> RAISE AN INVOICE</string>
+     <string name="notes">NOTES</string>
+     <string name="imonthewaymessage">I AM ON THE WAY</string>
+     <string name="arrived">I HAVE ARRIVED</string>
+     <string name="canceltrip">Cancel Trip</string>
+     <string name="cancelbooking">Passenger cancelled the booking on  Eserviss Driver!</string>
+     <string name="nonetwork">NO NETWORK CONNECTION FOUND</string>
+    <string name="lownetwork">LOW NETWORK CONNECTION FOUND</string>
+    
+    <string name="gpsnetwork">NO NETWORK AND GPS CONNECTION</string>
+     <string name="passengername">Passenger Name</string>
+      <string name="passengerphone">Mobile</string>
+      <string name="ihavearrived">I HAVE ARRIVED</string>
+     <string name="beginjourney">BEGIN TRIP</string>
+     <string name="journeystarted">JOURNEY STARTED</string>
+     <string name="finish">FINISH</string>
+     <string name="passengerdropped">PASSENGER DROPPED</string>
+     <string name="direction">Direction</string>
+     <string name="appointment">BOOKING</string>
+     <string name="appointmentdetail">APPOINTMENT DETAIL</string>
+     <string name="map">Map</string>
+     <string name="history">HISTORY</string>
+     <string name="timeanddate">Appointment Time and date</string>
+     <string name="myprofile">PROFILE</string>
+     <string name="invite">INVITE</string>
+     <string name="appinfo">ABOUT</string>
+      <string name="logouttitle">LOGOUT</string>
+     <string name="licencedetail">DRIVING LICENCE DETAILS</string><!-- Driving Licence Details -->
+      <string name="drivinglicenceno">Driving Licence No :</string>
+      <string name="cardetails">CAR DETAILS</string>
+      <string name="carmake">Car Make :</string>
+      <string name="cartype">Car Type :</string>
+      <string name="licenseplate">Licence Plate :</string>
+      <string name="insuranse">Insurance :</string>
+      
+        <!--  Medical Licese Number spell error -->
+         <string name="expiredate">Expiration Date :</string><!-- Expiration Date -->
+         <string name="statistic">STATISTICS</string>
+         <string name="total_earning">Lifetime Earnings :</string>
+         <string name="monthearning">Earnings This Month :</string>
+         <string name="weekearning">Earnings This Week :</string>
+         <string name="todayearning">Today\'s Earning :</string>
+         <string name="lastbill">Last Bill :</string>
+         <string name="totalbooking">Completed Bookings :</string>
+         <string name="rating">Ratings :</string>
+         
+         <string name="logoutbuttontext">LOGOUT</string>
+         <string name="reststpassword">PASSWORD RESET</string>
+         <string name="completedappointment">Appointment Completed </string>
+         <string name="numberoffreviwe">Number of Reviews</string>
+         <string name="error">Error</string>
+         <string name="entervalidid">Please enter the email id.</string>
+          <string name="network">Network connection fail.</string>
+         <string name="km">KM</string>
+         <string name="kmh">KMPH</string>
+         <string name="note">NOTE :</string>
+         
+         <string name="entervalidamount">Please give valid amount</string>
+         
+         <string name="emailfield">Please enter your Email Id.</string>
+         <string name="passfield">Please enter your password.</string>
+         <string name="carfield">Please enter your Car ID</string>
+         <!-- appinfo string -->
+         <string name="evertoneprivetdriver">EVERYONE`S PRIVATE TAXI</string>
+         <string name="ratethisapp">Rate Us in Google Play</string>
+         <string name="likeusonfacebook">Like Us On Facebook</string>
+         <string name="legals">Legal</string>
+         <string name="rateapptext">Rate</string>
+         <string name="ifyouenjoytext">If you enjoy using </string>
+         <string name="enteramount">Enter Amount</string>
+         <string name="couldntlouchmarket">Couldn`t launch the market</string>
+         <string name="remindmelatertext">Remind me later</string>
+         <string name="pleaserateapptext"> please take a moment to rate it. Thanks for your support!</string>
+          <string name="recieve">Received:</string>
+         <!-- string for terms and condition -->
+         <string name="termandcondition">TERMS AND CONDITION</string>
+         <string name="term">Terms of Use</string>
+         <string name="condition">Condition</string>
+         <string name="policy">Privacy Policy</string>
+         <string name="security">Security</string>
+         <string name="done">DONE</string>
+         
+        <string name="gps">GPS settings</string>
+           <string name="settings">Settings</string>
+           <string name="select">Select</string>
+           
+           <string name="apprxfare">Approx fare</string>
+         <string name="gpsdisable">GPS is disabled in your device. Would you like to enable it?</string>
+         
+         
+         <string name="toll">TOLL</string>
+          <string name="parking">PARKING</string>
+           <string name="airport">AIRPORT</string>
+            <string name="meter">METER</string>
+             <string name="total">TOTAL</string>
+         
+         
+    <string-array name="nav_drawer_items">
+        <item>HOME</item>
+        <item>BOOKING</item>
+        <item>PROFILE</item>
+      <!--  <item>SUPPORT</item>-->
+        <item>INVITE</item>
+        <item>ABOUT</item>
+        <!-- item>My Schedule</item -->
+        <item>LOGOUT</item>
+    </string-array>
+
+    <string-array name="monthsName">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/driver_menu_home_icon</item>
+        <item>@drawable/driver_menu_booking_icon</item>
+        <item>@drawable/driver_menu_profile_icon</item>
+        <item>@drawable/driver_menu_info_icon</item>
+        <item>@drawable/driver_menu_invite_icon</item>
+     <!--   <item>@drawable/driver_menu_support_icon</item>-->
+       <item>@drawable/driver_menu_logout_icon</item>
+    </array>
+ <string name="driverapptext"> Eserviss Driver</string>
+    <string name="cash">CASH</string>
+    <string name="card">CARD</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fname">First Name</string>
+    <string name="emailId">Email</string>
+    <string name="pass">Password</string>
+    <string name="lname">Last Name</string>
+    <string name="godash">HOME</string>
+    <string name="profile_field">Please add your photo.</string>
+    <string name="firstnameProfile">First Name</string>
+    <string name="noFutureAptsAvailable">No future appointments</string>
+    <string name="noAptsAvailable">No appointments available.</string>
+    <string name="pleaseWait">Please wait</string>
+    <string name="oops">Oops</string>
+</resources>

@@ -1,0 +1,49 @@
+package com.app.taxisharingDriver.response;
+
+import com.google.gson.annotations.SerializedName;
+
+public class LogoutUser 
+{
+
+	/*Response:
+		Error:
+		{
+		    "errNum": "1",
+		    "errFlag": "1",
+		    "errMsg": "Mandatory field missing"
+		} 
+
+		Success:
+		{
+		    "errNum": "29",
+		    "errFlag": "0",
+		    "errMsg": "Logged out!"
+		} */
+
+	@SerializedName("errNum")
+	private int errNum;
+	@SerializedName("errFlag")
+	private int errFlag;
+	@SerializedName("errMsg")
+	private String errMsg;
+	public int getErrNum() {
+		return errNum;
+	}
+	public void setErrNum(int errNum) {
+		this.errNum = errNum;
+	}
+	public int getErrFlag() {
+		return errFlag;
+	}
+	public void setErrFlag(int errFlag) {
+		this.errFlag = errFlag;
+	}
+	public String getErrMsg() {
+		return errMsg;
+	}
+	public void setErrMsg(String errMsg) {
+		this.errMsg = errMsg;
+	}
+	
+	
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/termbutton"
+        android:layout_width="wrap_content"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/term"
+        android:background="@drawable/selector_for_termandcondition_top"
+        android:textColor="@color/selecto_for_termandcondittextview"
+        
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/condtionbutton"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+         android:layout_gravity="center_horizontal"
+      
+        android:text="@string/condition"
+       android:background="@drawable/selector_for_termsandcondtionsmiddil"
+        android:textColor="@color/selecto_for_termandcondittextview"
+        
+        android:layout_height="wrap_content" />
+      <Button
+        android:id="@+id/policybutton"
+        android:layout_width="wrap_content"
+      android:layout_gravity="center_horizontal"
+        android:text="@string/policy"
+        android:background="@drawable/selector_for_termsandcondition_bottom"
+        android:textColor="@color/selecto_for_termandcondittextview"
+        
+        android:layout_height="wrap_content" />
+      
+       <Button
+        android:id="@+id/securitybutton"
+        android:layout_width="wrap_content"
+       android:layout_gravity="center_horizontal"
+        android:text="@string/security"
+        android:visibility="gone"
+       android:background="@drawable/selector_for_termsandcondition_bottom"
+        android:textColor="@color/selecto_for_termandcondittextview"
+        
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.taxisharingDriver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.app.taxisharingDriver.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.app.driverapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.app.taxisharingDriver.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme"
+        android:supportsRtl="true"
+        >
+        <activity
+            android:name="com.app.taxisharingDriver.SplahsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.app.driverapp.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.TermandCondtion"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.ShowWebView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="eu.janmuller.android.simplecropimage.CropImage" />
+        <activity
+            android:name="com.app.taxisharingDriver.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+         <activity
+            android:name="com.app.taxisharingDriver.BookingHistory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.ForgotPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity
+            android:name="com.app.driverapp.AppointmentDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>-->
+        <activity
+            android:name="com.app.taxisharingDriver.IHaveArrivedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.CancelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.PendingBooking"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.IAmOnTheWay"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.BeginJourneyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.PassengerDroppedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.taxisharingDriver.JourneyDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBKqwBY36bPbi8RztZ8maQ4Be6w2QXmbu0" />
+
+        <!-- for local app google api key -->
+        <!-- android:value="AIzaSyBKqwBY36bPbi8RztZ8maQ4Be6w2QXmbu0 " -->
+        <!-- for server app google api key -->
+        <!-- android:value="AIzaSyDtyM4u6zFjUtpVSUHZQZTE_GWVxKbAdcE" -->
+
+
+         <receiver
+            android:name="com.app.taxisharingDriver.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+                
+               <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="com.app.taxisharingDriver.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+
+                <category android:name="com.app.driverapp" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.app.taxisharingDriver.GcmIntentService" />
+        <service
+            android:name="com.app.taxisharingDriver.MyService"
+            android:exported="false" />
+
+        <service android:name="com.app.taxisharingDriver.PubnubService"/>
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="8c41e9486e74492897473de501e087dbc6d9f391" />
+        <meta-data
+            android:name="PW_APPID"
+            android:value="09CE4-7BA06" />
+        <meta-data
+            android:name="PW_PROJECT_ID"
+            android:value="A340619111229 " />
+    </application>
+
+</manifest>

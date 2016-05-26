@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlCaldroidFragContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/cal_appointment_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/caldroidHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="General" />
+            </RelativeLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/myprofileimageborderlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/myprofilescreen_image_boader" >
+
+                    <ImageView
+                        android:id="@+id/su_one_profile_image"
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/default_user" />
+                </RelativeLayout>
+
+                <!--
+        <ImageView
+        android:id="@+id/su_one_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+      
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher" />
+                -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/su_one_first_name_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/fname"
+                        android:textColor="#000000" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/background" />
+
+                    <EditText
+                        android:id="@+id/su_one_last_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:inputType="textNoSuggestions"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/lastname"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/su_one_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/mobilenopro"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/su_one_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/emailpro"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/su_one_driver_lic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/driverlicence"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/su_one_expiry_date"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/expiredate"
+                android:textColor="#000000" />
+
+            <!--
+                 <TextView
+                android:id="@+id/su_one_zipcode_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:maxLength="5"
+                android:text="Zipcode"
+                android:textColor="#000000" />
+            -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/myprofilescreen_gray_bar" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cardetails"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/car_make"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/carmake"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/car_type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/cartype"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/seating_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/seatingcapacity"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/license_plate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/licenseplate"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/insuranse"
+                android:textColor="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/myprofilescreen_gray_bar" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/statistic"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <!--
+                 <TextView
+                android:id="@+id/numberofreviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/numberoffreviwe"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+            -->
+
+            <EditText
+                android:id="@+id/totalearning"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/total_earning"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/monthearning"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/monthearning"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/weekearning"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/weekearning"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/todayearning"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/todayearning"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/lastbill"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/lastbill"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/totalbooking"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="10dp"
+                android:hint="@string/totalbooking"
+                android:textColor="#000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/avarageratingtextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/rating"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginStart="20dp" >
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+            </RelativeLayout>
+
+            <!--
+                 <TextView
+                android:id="@+id/appointmentcompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/completedappointment"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+            -->
+
+
+            <!--
+                 <Button
+                android:id="@+id/logoutbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_register_button"
+                android:text="@string/logoutbuttontext"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/passwordreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/selector_register_button"
+                android:text="@string/reststpassword" />
+            -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

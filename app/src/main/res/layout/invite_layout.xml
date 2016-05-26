@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_profil"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/invitetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:maxLines="5"
+        android:text="@string/invittext"
+        android:textSize="18sp" />
+    <!--hidden-->
+    <ImageView
+        android:id="@+id/roadyo_logo_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invitetext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:background="@drawable/roadyo_logo_invite" />
+
+    <LinearLayout
+        android:id="@+id/share_rel"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roadyo_logo_invite"
+            android:layout_marginEnd="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:weightSum="7"  >
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_for_facebook" />
+        
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             />
+
+        <ImageView
+            android:id="@+id/email_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_for_email_share" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             />
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_for_message" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_for_twitter" />
+    </LinearLayout>
+
+</RelativeLayout>

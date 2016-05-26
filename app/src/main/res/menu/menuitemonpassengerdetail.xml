@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+        android:id="@+id/a_More"
+        android:icon="@drawable/more_icon_on"
+        android:showAsAction="always"
+        android:title="More">
+        <menu>
+        
+            <item
+               android:id="@+id/googlenavigation"
+               android:title="@string/history"
+                android:showAsAction="never"/>
+            <item
+               android:id="@+id/googlemap"
+               android:title="@string/map"
+                android:showAsAction="never"/>
+
+          
+        </menu>
+    </item>
+    
+      
+
+</menu>

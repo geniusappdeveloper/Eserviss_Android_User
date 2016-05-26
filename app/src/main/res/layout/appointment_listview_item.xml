@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appointmentitemmainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bookingidrelative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background_profil" >
+
+        <TextView
+            android:id="@+id/booking_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/bookingidtext" />
+
+        <TextView
+            android:id="@+id/home_booking_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/booking_id"
+            android:layout_toRightOf="@id/booking_id" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true" />
+
+        <!-- <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/time_text"
+            android:layout_toStartOf="@id/time_text"
+            android:text="@string/time_text" /> -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/passenger_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Martin Grove "
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" >
+
+        <ImageView
+            android:id="@+id/pic_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calender_pickuplocation_icon" />
+
+        <TextView
+            android:id="@+id/pick_loc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/pic_icon"
+            android:layout_toRightOf="@id/pic_icon"
+            android:text="@string/pickup"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pick_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="3"
+        android:text="54 RBI Colony Anand Nagar Hebbal Bangalore Karnataka"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" >
+
+        <ImageView
+            android:id="@+id/drop_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calender_dropoff_icon" />
+
+        <TextView
+            android:id="@+id/drop_loc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/drop_icon"
+            android:layout_toRightOf="@id/drop_icon"
+            android:text="@string/dropoff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/drop_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="3"
+        android:text="54 RBI Colony Anand Nagar Hebbal Bangalore Karnataka"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 25"
+            android:textSize="20sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/amount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="PAID"
+            android:textColor="@color/green"
+           />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="BOOKING COMPLETED"
+           />
+    </LinearLayout>
+
+</LinearLayout>

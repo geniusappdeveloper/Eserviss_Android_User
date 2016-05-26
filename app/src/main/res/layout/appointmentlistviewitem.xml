@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appointmentitemmainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/petientnameandtimelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/imageviewlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/calender_imagethumbnail" >
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/default_user" />
+             <!-- <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageview"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            /> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/amountrel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageviewlayout"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20pt">
+                
+            </TextView>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/amounttextrel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amountrel"
+            android:layout_margin="5dp" >
+
+             <TextView
+                android:id="@+id/amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/userNamelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageviewlayout"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageviewlayout"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/passenger_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/calender_pickuplocation_icon" />
+                <TextView
+                android:id="@+id/pick_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+                </LinearLayout>
+                
+                 <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/calender_dropoff_icon" />
+            <TextView
+                android:id="@+id/drop_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/calender_miles_icon" />
+
+                <TextView
+                    android:id="@+id/destanceunittextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" 
+                     android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/calender_time_icon" />
+            <TextView
+                android:id="@+id/time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                 android:textSize="18sp" />
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+                
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                 android:textSize="18sp" />
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/arrowlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" >
+
+            <!-- <ImageView
+                android:id="@+id/arrowimageview"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/accept_btn" /> -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
