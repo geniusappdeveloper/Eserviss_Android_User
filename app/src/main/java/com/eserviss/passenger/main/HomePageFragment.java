@@ -120,6 +120,8 @@ import com.eserviss.passenger.pojo.StatusInformation;
 import com.eserviss.passenger.pojo.TipResponse;
 import com.eserviss.passenger.pubnu.pojo.PubNubResponse;
 import com.eserviss.passenger.pubnu.pojo.PubnubResponseNew;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.log.LogFile;
 import com.special.ResideMenu.ResideMenu;
 import com.squareup.picasso.Picasso;
@@ -8348,7 +8350,22 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 				rotation_angle = driverLocation.getBearing();
 
-				googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+			//	googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+
+//============new Change bounds==================
+				final LatLngBounds.Builder builder = new LatLngBounds.Builder();
+				if (new LatLng(currentLatitude,currentLongitude)!=null) {
+					builder.include(new LatLng(currentLatitude,currentLongitude));
+				}
+				if (new LatLng(driver_current_latitude,driver_cuttent_longitude) != null) {
+					builder.include(new LatLng(driver_current_latitude,driver_cuttent_longitude));
+				}
+
+				LatLngBounds bounds = builder.build();
+
+				CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, 7);
+				googleMap.moveCamera(cu);
+
 
 
 
@@ -8405,8 +8422,24 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 				driverLocation.setLongitude(driver_cuttent_longitude);
 
 				rotation_angle = driverLocation.getBearing();
-				googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-				//googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,18f));
+				//googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+
+				//============new Change bounds==================
+				final LatLngBounds.Builder builder = new LatLngBounds.Builder();
+				if (new LatLng(currentLatitude,currentLongitude)!=null) {
+					builder.include(new LatLng(currentLatitude,currentLongitude));
+				}
+				if (new LatLng(driver_current_latitude,driver_cuttent_longitude) != null) {
+					builder.include(new LatLng(driver_current_latitude,driver_cuttent_longitude));
+				}
+
+				LatLngBounds bounds = builder.build();
+
+				CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, 7);
+				googleMap.moveCamera(cu);
+
+
+
 				marker_map_arrived.get(filterResponse.getChn()).setRotation(rotation_angle);
 				marker_map_arrived.get(filterResponse.getChn()).setPosition(latLng);
 				//======================My Change Car rotation==================//
@@ -8456,8 +8489,20 @@ public class HomePageFragment extends Fragment implements OnClickListener,OnTouc
 
 				rotation_angle =driverLocation.getBearing();
 
-				googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-				//googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,18f));
+				//googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
+				//============new Change bounds==================
+				final LatLngBounds.Builder builder = new LatLngBounds.Builder();
+				if (new LatLng(currentLatitude,currentLongitude)!=null) {
+					builder.include(new LatLng(currentLatitude,currentLongitude));
+				}
+				if (new LatLng(driver_current_latitude,driver_cuttent_longitude) != null) {
+					builder.include(new LatLng(driver_current_latitude,driver_cuttent_longitude));
+				}
+
+				LatLngBounds bounds = builder.build();
+
+				CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, 7);
+				googleMap.moveCamera(cu);
 
 				marker_map_arrived.get(filterResponse.getChn()).setRotation(rotation_angle);
 				marker_map_arrived.get(filterResponse.getChn()).setPosition(latLng);
