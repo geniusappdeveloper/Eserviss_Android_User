@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/confirm_shape"
+        android:orientation="horizontal"
+        android:id="@+id/abovellout"
+        android:weightSum="5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/driver_profile_pic"
+            android:background="@drawable/profile_image_frame"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+           android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abcd"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:id="@+id/driver_name"
+
+                />
+       <!--     <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:minHeight="10dp"
+                android:numStars="5"
+                android:id="@+id/driver_rating"
+                android:progressDrawable="@drawable/invoice_rating"
+                android:stepSize="1.0"
+
+                />-->
+
+            <RatingBar
+                android:id="@+id/driver_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_rating"
+                android:layout_centerHorizontal="true"
+                android:isIndicator="false"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="25dp"
+                android:numStars="5"
+                android:progressDrawable="@drawable/invoice_rating"
+
+                android:stepSize="1.0" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="carname"
+                android:textSize="16sp"
+                android:id="@+id/driver_car_type"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="carname"
+                android:textSize="14sp"
+                android:id="@+id/driver_car_plate_no"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:orientation="vertical"
+
+            android:background="@drawable/cancel_g"
+            android:layout_weight="2"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/cancel_trip"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:id="@+id/cancel_trip"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/contact_driver"
+                android:id="@+id/contact_driver"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+              />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="@string/share_eta"
+                android:id="@+id/share_eta"
+                android:gravity="center"
+                android:layout_margin="1dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/requestpick_shape"
+        android:layout_below="@+id/abovellout"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="DISTANCE:0.23 MILES"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:id="@+id/driver_distance"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="time:1 min"
+                android:textAllCaps="true"
+                android:padding="5dp"
+                android:id="@+id/driver_time"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+ <!--     <android.support.v4.view.DirectionalViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /> -->
+
+    <!--<ImageView
+        android:id="@+id/circle_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/back_ground_stroke"
+        android:visibility="gone" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/upperllout"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splash_logo"
+            android:layout_gravity= "center_horizontal"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/selectlang"
+        android:background="@color/yellowrequestpick"
+        android:text="LANGUAGE SETTINGS"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/upperllout"
+        android:textSize="18sp"><!-- android:layout_centerVertical="true"-->
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icn_spalsh_languagesettings_arrow"
+        android:layout_below="@+id/selectlang"
+        android:id="@+id/selectimgarow"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Spinner
+        android:id="@+id/languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/array_name_lang"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/selectimgarow"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinnerimagselect"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="WALK THROUGH THE APP ?"
+        android:textColor="@color/yellowrequestpick"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/languages"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:visibility="visible"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="30dp"/>
+    
+    <LinearLayout
+        android:id="@+id/login_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/login_selector"
+            android:text="SIGN IN"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/register_selector"
+            android:text="REGISTER"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/swipe_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:text="Swipe up"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

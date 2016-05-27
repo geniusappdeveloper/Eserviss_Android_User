@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Payal\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_8f3ccde59895dec1cf5128ff35bc65ca8c2d5904\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_b0bfde6f1fe04c4d26b0d375900ef6ea2f991427\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.stripe\stripe-java\1.40.0\ea7852585a78f79d85083f29e4a5050679d707b6\stripe-java-1.40.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ea7852585a78f79d85083f29e4a5050679d707b6">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\stripe-java-1.40.0_58065d8bcaede59641cca936602435332b38c6a3\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.6\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="9af3b9b8114e685291aa00e6572b0a9131244956">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-answers-1.3.6_9750db161933f8eeeafdfbf70cb36995c08fe649\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.mcxiaoke.volley\library\1.0.0\15f8abc7f1414bbffca8d32b73097223d3a83847\library-1.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="15f8abc7f1414bbffca8d32b73097223d3a83847">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-1.0.0_07e30f625229ce2c2c2aea2976e6daa8eb7b0c01\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\net.simonvt.menudrawer\menudrawer\3.0.6\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6c43e8970e14e22ed8ea6bee207b27829422d516">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.simonvt.menudrawer-menudrawer-3.0.6_1966e9c35fb103a882941677ca4ad1b144dbd0b9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_f2b862f627458d59fa64e0d1a53a0ff1560412ec\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\de.greenrobot\eventbus\2.4.0\ddd166d01b3158d1c00576d29f7ed15c030df719\eventbus-2.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-2.4.0_e352e6a3e20c7e28188a5bc857e3092b466bfafc\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_c9908bb8b386dfe58c18b4ac4cb6060a94583bad\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.5\6b262da268f8ad9eff941b25503a9198f0a0ac93\slf4j-api-1.7.5.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6b262da268f8ad9eff941b25503a9198f0a0ac93">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\slf4j-api-1.7.5_3a78c2da599afefb0bce2d048358d47ac7aea16f\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\libs\GoogleConversionTrackingSdk-2.2.4.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1b178dd030b222412a96435782c0dc24aac48a8f">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\2\GoogleConversionTrackingSdk-2.2.4_999bd39f8356787d926d97fbee1312025db8f640\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_3c594d01f3f2b7e39e97a9e692c142116ae8b180\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.github.castorflex.smoothprogressbar\library\1.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1b42b57cacd24838e3341d5f3cd2035226ef2867">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.castorflex.smoothprogressbar-library-1.1.0_919709dfc51c89d56638cdc6b71b7926c13134be\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.darwinsys\hirondelle-date4j\1.5.1\7b52de513f87ae4d9ff5d17518def0a1e9bc3df0\hirondelle-date4j-1.5.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\hirondelle-date4j-1.5.1_c7e07fdfeb41e5d19ebbee2dd8cacd5adfd0d87a\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics-core\2.3.8\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="c9ef45dcbd082cd63aac09a5e2cd443adb5df837">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-core-2.3.8_1d8141d0611d62def4670945e62206cc8082729b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_37ffecab5dc6a0a7b62040e77444b06eacb22105\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.stripe\stripe-android\1.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="92a76dcd3b6921f41b625de471a08abcf6f3d96a">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.stripe-stripe-android-1.0.4_c1055b7a196c6907a962cee47ac3d37bf0d94a3c\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\crashlytics\2.5.5\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="611605b6b640c1558f9bdea41de8ff837ab68ca8">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-2.5.5_2118a34c4693e0595d5579afc8857d4366a5c861\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\libs\FlurryAnalytics-4.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="4fcf733ae6d937dbba0f42b6549ffbb8a068dc6c">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\2\FlurryAnalytics-4.0.0_e585dd11cce96acd3ba7c92250e8045f52591dad\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_4eb63fe4c84fd4afbbbc82c33c49d671cad8cff4\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_30bab268e2a2600c7b26955b0c506d71989ea6b0\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.2.0_0517984e1abf5b8860124ceb95c3c0c79ef12f59\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="88a88caec070a2e702b1ecc5d20e083db2c460ed">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_82bfa98140d76eb38aec41c8b8e33bfcda670061\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_1def316d176499f2d64f1fa41411a890a47ae95d\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.daimajia.easing-library-1.0.1_5b14ac71a23aecc4e6dcb33da6ea94fed41b6fc4\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\io.fabric.sdk.android\fabric\1.3.10\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a5db9a2dd46d84285ef737f65030b74b6e8ee2a4">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.fabric.sdk.android-fabric-1.3.10_c6e3a6ea3b383aca4bf91e0de760c3f6f64789a9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\library\1.9.5\9c27b9647cbfd0f3d5bb3652db037d0ac98b3c88\library-1.9.5.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="9c27b9647cbfd0f3d5bb3652db037d0ac98b3c88">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-1.9.5_87b01ff057fc488a8979a089d13af574044c29e7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.2.4_313aff129984a0a45e086871ec03bfcc02e7284e\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\net.danlew\android.joda\2.8.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="837da5dd5fda1d7d1442adf53fddee98edee1cf6">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.danlew-android.joda-2.8.1_1c7bb6df211090524ef822f1f1353d09042d5700\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_451e28957054a0a530587516563c467553f5de35\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.daimajia.androidanimations-library-1.1.3_4349eadedad351465e3fab602207174687e2fd50\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_a52f8b0304eef3c59c8be4404f8bd8e59b7a394c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\org.bouncycastle\bcprov-jdk16\1.46\ce091790943599535cbb4de8ede84535b0c1260c\bcprov-jdk16-1.46.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ce091790943599535cbb4de8ede84535b0c1260c">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\bcprov-jdk16-1.46_f53d7fd31e461a1e87615586b3168e40a71b46d2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\com.pubnub\pubnub\3.5.6\6caf3a1b48b3ec6b16abaacd87f31a051d098fb2\pubnub-3.5.6.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6caf3a1b48b3ec6b16abaacd87f31a051d098fb2">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\pubnub-3.5.6_fc90ab1682022f1b377f5c905f6ba0b2dd1ae8ed\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\beta\1.1.4\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ad5bb101ced4d3939225c9b57e5a3d81547c1fbb">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-beta-1.1.4_ad5d977042a08829bbba4275f7fcb56ccaa6c3de\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="d11f86e2ab881f674cfb8c836cc919c34a54cc5c">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3006d0ca93329bc32315a287a4562d87289562c4\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_d0a5203c373d6afdd7093703651295a05fba604d\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_f770acea6cca971e922396948dac7bdbad629fe1\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.roomorama\caldroid\2.1.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="3965ef9b385194df898456d234f141279747a5c4">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.roomorama-caldroid-2.1.0_937c965cf13505a3d05596ea62728cc3ab572ad9\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="cb86970df0f0f25f766d320b279c7858c1ca0003">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.2.1_b6121418924ac611988ff87e7a9ebf9cb4a2987e\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_88ed016a0aded7ecb86d54ae4e0e8940210a24b3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Payal\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.8.1\1e832c24db179ea0e9bdc99eeab73e860465f65b\joda-time-2.8.1-no-tzdb.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="1e832c24db179ea0e9bdc99eeab73e860465f65b">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\joda-time-2.8.1-no-tzdb_10e47f2e2e7c3640dbf06eb7d03b569a241f8e71\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.11.0\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="86da97c30f50a67ddabe2cf7040713ad17153fce">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.11.0_4ec0d54cef1964e6e92d61a7c91146908362fda4\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\io.card\android-sdk\5.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a99806fbb9b63d99a906d4ae92546827f895a6bf">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.card-android-sdk-5.0.1_59d52068536dc65f8b233868a66ff1448436e009\classes.dex" />
+    </item>
+    <item
+        jar="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="0e5a66a941515d873a34065fe44fbba6ef422a1b">
+        <dex dex="E:\vll\Eserviss_S.C_Android_User_07-04-2016\Eserviss_Android_User\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.2.1_a920c6d3d00d924bb119260f8ecf65f530feef3d\classes.dex" />
+    </item>
+
+</items>

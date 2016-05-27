@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="#80C0C0C0"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/relative_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_share"
+            android:layout_centerHorizontal="true" >
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/cancel_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_alignLeft="@+id/relative_share"
+            android:layout_alignStart="@+id/relative_share"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cancel_share"
+            android:textSize="20sp"
+            android:textColor="#007aff"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancel_share"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" >
+
+            <Button
+                android:id="@+id/facebook_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/facebook_share"
+                 />
+
+            <Button
+                android:id="@+id/twitter_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/facebook_share"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/twitter_share"
+                />
+
+            <Button
+                android:id="@+id/email_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/twitter_share"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/email_share"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/profile_image_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_su" >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/createaccount_thumbnail" />
+
+        <EditText
+            android:id="@+id/profile_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_toEndOf="@+id/profile_image"
+            android:background="@drawable/border_su"
+            android:hint="First Name*"
+            android:inputType="textCapWords"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null" />
+
+        <EditText
+            android:id="@+id/profile_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_below="@+id/profile_first_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_toEndOf="@+id/profile_image"
+            android:background="@drawable/border_without_top"
+            android:hint="Last Name"
+            android:inputType="textCapWords"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/profile_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@+id/profile_image_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_su"
+        android:hint="Mobile No*"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@+id/profile_mobile_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border_with_right_left"
+        android:hint="Email*"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@+id/profile_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border_with_right_left"
+        android:hint="Password*"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

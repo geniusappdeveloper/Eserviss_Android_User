@@ -1,0 +1,1518 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outer_map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/show_address_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/home_locationbar"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/address_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/home_search"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/Appointment_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/pickup_location"
+            android:textColor="@color/yellowrequestpick"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/show_addr_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Appointment_location"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/address_search_button"
+            android:layout_toLeftOf="@+id/go_to_current_position"
+            android:layout_toRightOf="@+id/address_search_button"
+            android:layout_toStartOf="@+id/go_to_current_position"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/go_to_current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/address_search_button"
+            android:layout_centerVertical="true"
+            android:background="@drawable/currentlocation_btn_selector" />
+
+        <ImageButton
+            android:id="@+id/location_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/go_to_current_position"
+            android:layout_toStartOf="@+id/go_to_current_position"
+            android:background="@drawable/home_locationbar_divider" />
+    </RelativeLayout>
+
+
+    <!--     <RelativeLayout
+            android:id="@+id/relative_now_later_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_address_relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tab_bar" >
+
+            <TextView
+                android:id="@+id/booking_for"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:text="YOU ARE BOOKING FOR NOW"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </RelativeLayout> -->
+
+
+    <RelativeLayout
+        android:id="@+id/relative_pickup_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="#F7F7F7"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_homepage"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/back_btn_selector"
+            android:clickable="true">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/login_btn_back_btn"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/img_logo"
+                android:layout_toRightOf="@+id/img_logo"
+                android:text="@string/promo_cancel"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/btn_back"
+                android:layout_toRightOf="@+id/btn_back" />
+
+            <TextView
+                android:id="@+id/txt_roadyo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+
+                android:gravity="center"
+
+                android:text="@string/confirmation"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_pickup_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_pickup_navigation"
+        android:background="@drawable/address_bar_selector"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/imgpickup"
+            android:layout_width="40dp"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/img_map"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_pickup_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/imgpickup"
+            android:layout_toRightOf="@+id/imgpickup"
+            android:text="@string/pickup_location"
+            android:textColor="#055F1A"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/pickup_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pickup_location"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imgpickup"
+            android:layout_toRightOf="@+id/imgpickup"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_dropoff_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_pickup_location"
+        android:background="@drawable/address_bar_selector"
+        android:clickable="true"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/imgdropoff"
+            android:layout_width="40dp"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/img_dropoff"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/pin" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_dropoff_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/imgdropoff"
+            android:layout_toRightOf="@+id/imgdropoff"
+            android:text="@string/drop_location"
+            android:textColor="#055F1A"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/add_drop_off_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add_location_selector"
+            android:text="+"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/dropoff_location_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dropoff_location"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/imgdropoff"
+            android:layout_toLeftOf="@+id/add_drop_off_location"
+            android:layout_toRightOf="@+id/imgdropoff"
+            android:layout_toStartOf="@+id/add_drop_off_location"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_relative_dropoff_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_booking"
+        android:background="@drawable/address_bar_selector"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/new_img_dropoff"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/d" />
+
+        <TextView
+            android:id="@+id/new_txt_dropoff_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/new_img_dropoff"
+            android:layout_toRightOf="@+id/new_img_dropoff"
+            android:text="@string/drop_location"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/new_add_drop_off_location"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/add_location_selector"
+            android:text="+"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/new_dropoff_location_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_txt_dropoff_location"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:hint="ADD DROP OFF LOCATION"
+            android:layout_marginTop="2dp"
+
+            android:layout_toRightOf="@+id/new_img_dropoff"
+
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_carinfo_bg"
+        android:visibility="gone"></HorizontalScrollView>
+
+    <!--    <ImageButton
+            android:id="@+id/map_hybrid_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relative_all_car_types"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/hybrid_map_selector" />
+
+        <ImageButton
+            android:id="@+id/map_normal_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/map_hybrid_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/normal_map_selector" />-->
+
+
+    <LinearLayout
+        android:id="@+id/now_later_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:id="@+id/now_button"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/yellowrequestpick">
+
+            <TextView
+                android:id="@+id/booknwtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="NOW"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/carnowimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_car_booknow" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_booknowlater_divider" />
+
+        <RelativeLayout
+            android:id="@+id/later_button"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/booknwltr">
+
+            <TextView
+                android:id="@+id/bookltrtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="LATER"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/carlatrimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_car_booknow"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_all_car_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/now_later_layout">
+
+        <RelativeLayout
+            android:id="@+id/one_car_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/one_car_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_carinfo_caricon_blue_1" />
+
+            <TextView
+                android:id="@+id/one_car_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/one_car_iv_logo"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_cars_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rlTestingCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp">
+
+                <ImageButton
+                    android:id="@+id/two_cars_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_carinfo_timeslider_point"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/two_car_type1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two_cars_button1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlTester2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageButton
+                    android:id="@+id/two_cars_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_carinfo_timeslider_point" />
+
+                <TextView
+                    android:id="@+id/two_car_type2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/two_cars_button2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/vDivider"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-5dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginStart="-5dp"
+                android:layout_toEndOf="@id/rlTestingCar"
+                android:layout_toLeftOf="@id/rlTester2"
+                android:layout_toRightOf="@id/rlTestingCar"
+                android:layout_toStartOf="@id/rlTester2"
+                android:background="@drawable/home_carinfo_timeslider" />
+
+            <ImageView
+                android:id="@+id/two_cars_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/home_carinfo_caricon_blue_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/three_cars_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/three_cars_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/home_carinfo_caricon_blue_1" />
+
+            <ImageButton
+                android:id="@+id/three_cars_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/home_currentlocation_off"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/three_car_type1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/three_cars_button1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/three_cars_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_currentlocation_off" />
+
+            <TextView
+                android:id="@+id/three_car_type2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/three_cars_button2"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/three_cars_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/home_currentlocation_off" />
+
+            <TextView
+                android:id="@+id/three_car_type3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/three_cars_button3"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/four_cars_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0E0E0"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/four_cars_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/home_carinfo_caricon_blue_1" />
+
+            <ImageButton
+                android:id="@+id/four_cars_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/home_currentlocation_off"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/four_car_type1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/four_cars_button1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/four_cars_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/four_cars_button1"
+                android:layout_toRightOf="@+id/four_cars_button1"
+                android:background="@drawable/home_currentlocation_off" />
+
+            <TextView
+                android:id="@+id/four_car_type2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/four_cars_button2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/four_cars_button1"
+                android:layout_toRightOf="@+id/four_cars_button1"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/four_cars_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/four_cars_button2"
+                android:layout_toRightOf="@+id/four_cars_button2"
+                android:background="@drawable/home_currentlocation_off" />
+
+            <TextView
+                android:id="@+id/four_car_type3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/four_cars_button3"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/four_cars_button2"
+                android:layout_toRightOf="@+id/four_cars_button2"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/four_cars_button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/four_cars_button3"
+                android:layout_toRightOf="@+id/four_cars_button3"
+                android:background="@drawable/home_currentlocation_off" />
+
+            <TextView
+                android:id="@+id/four_car_type4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/four_cars_button4"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/four_cars_button3"
+                android:layout_toRightOf="@+id/four_cars_button3"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/mid_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textviewmidpoint"
+        android:layout_centerInParent="true"
+
+           android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/map_icn_currentlocation" />
+
+
+    <TextView
+        android:id="@+id/textviewmidpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/relative_center"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/mid_pointer"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pickuplocation_selector"
+        android:clickable="true">
+
+
+        <RelativeLayout
+            android:id="@+id/carblckrrlout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+
+            android:background="@drawable/car_icon_bg"
+            android:gravity="center">
+
+
+            <com.gc.materialdesign.views.ProgressBarCircularIndetermininate
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="1dp"
+                android:background="#1E88E5" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/carimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/car_icon_mappin"
+
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/carimage"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/txt_pickup_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="05dp"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+
+
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/rate_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="07dp"
+                        android:layout_toRightOf="@+id/txt_pickup_distance"
+                        android:paddingLeft="3dp"
+                        android:paddingStart="3dp"
+                        android:text="@string/miles"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center|left"
+
+            android:paddingLeft="5dp"
+            android:text="@string/set_pickup_location"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/arrowimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/mappin_arrow" />
+
+        <!--
+             <ImageView
+            android:id="@+id/pickup_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progressBar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/txt_pickup"
+            android:background="@drawable/home_pickuplocation_arrow" />
+        -->
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/req_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/whiteround"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relative_car"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_carinfo_caricon_blue_1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_search"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/car_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="BLACK"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/seater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/car_color"
+                    android:layout_marginLeft="10dp"
+                    android:text="4SEATES"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/layout"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_below="@+id/view3"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relative_card_info"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/card_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@android:color/transparent"
+                    android:text="CREDIT"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/card_info"
+                    android:src="@drawable/card" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_payment_info"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/payment_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@android:color/transparent"
+                    android:text="CASH"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_payment"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/payment_info"
+                    android:src="@drawable/dollar" />
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0.5dp"
+
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:id="@+id/fare_promo_layouy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_fare"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/fare_quote"
+                    android:layout_weight="1"
+                    android:background="@drawable/fear" />
+
+                <Button
+                    android:id="@+id/fare_quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:background="@android:color/transparent"
+                    android:text="FARE QUOTE"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--
+
+        <LinearLayout
+            android:id="@+id/fare_promo_layouy"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="1" >&lt;!&ndash; android:layout_above="@+id/request_pick_up_here"&ndash;&gt;
+
+
+            &lt;!&ndash;<RelativeLayout&ndash;&gt;
+                &lt;!&ndash;android:id="@+id/relative_card_info"&ndash;&gt;
+                &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                &lt;!&ndash;android:layout_height="?android:attr/actionBarSize"&ndash;&gt;
+                &lt;!&ndash;android:background="@drawable/payment_type_selector"&ndash;&gt;
+                &lt;!&ndash;android:clickable="true"&ndash;&gt;
+                &lt;!&ndash;dash;&gt;&ndash;&gt;
+
+                 &lt;!&ndash;<ImageView&ndash;&gt;
+                     &lt;!&ndash;android:id="@+id/card_image"&ndash;&gt;
+                     &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                     &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                     &lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;
+                     &lt;!&ndash;android:layout_marginLeft="10dp" />&ndash;&gt;
+
+                &lt;!&ndash;<TextView&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/card_info"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                    &lt;!&ndash;android:text="@string/cash"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="@color/black"&ndash;&gt;
+                    &lt;!&ndash;android:textSize="20sp" />&ndash;&gt;
+               &lt;!&ndash;&lt;!&ndash; <Button&ndash;&gt;
+                    &lt;!&ndash;android:id="@+id/card_info"&ndash;&gt;
+                    &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+                    &lt;!&ndash;android:layout_height="?android:attr/actionBarSize"&ndash;&gt;
+                    &lt;!&ndash;android:layout_weight="1"&ndash;&gt;
+                    &lt;!&ndash;android:background="@drawable/fare_quote_selector"&ndash;&gt;
+                    &lt;!&ndash;android:text="@string/cash"&ndash;&gt;
+                    &lt;!&ndash;android:textColor="@color/grey"&ndash;&gt;
+                    &lt;!&ndash;android:visibility="visible" />&ndash;&gt;&ndash;&gt;
+                &lt;!&ndash;&lt;!&ndash; android:text="@string/paymeny_type" select_payment_type&ndash;&gt;&ndash;&gt;
+
+            &lt;!&ndash;</RelativeLayout>&ndash;&gt;
+           &lt;!&ndash; <Button
+                android:id="@+id/promo_code"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@drawable/fare_quote_selector"
+                android:text="@string/promo_code"
+                android:textColor="@color/grey"
+                android:visibility="visible" />&ndash;&gt;
+
+            <Button
+
+                android:id="@+id/fare_quote"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@drawable/promo_code_selector"
+                android:text="@string/fare_quote"
+                android:textColor="@color/grey"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    -->
+
+    <!-- <RelativeLayout
+         android:id="@+id/relative_card_info"
+         android:layout_width="match_parent"
+         android:layout_height="?android:attr/actionBarSize"
+         android:background="@drawable/payment_type_selector"
+         android:layout_above="@+id/fare_promo_layouy"
+         android:layout_marginLeft="10dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginEnd="10dp"
+         android:visibility="visible"
+         android:clickable="true"
+         >
+
+         <ImageView
+             android:id="@+id/card_image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp" />
+
+         <TextView
+             android:id="@+id/card_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/paymeny_type"
+             android:layout_centerInParent="true"
+             android:textColor="@color/black"
+             android:textSize="20sp" />
+         &lt;!&ndash; <Button
+              android:id="@+id/card_info"
+              android:layout_width="match_parent"
+              android:layout_height="?android:attr/actionBarSize"
+              android:layout_weight="1"
+              android:background="@drawable/fare_quote_selector"
+              android:text="@string/cash"
+              android:textColor="@color/grey"
+              android:visibility="visible" />&ndash;&gt;
+         &lt;!&ndash; android:text="@string/paymeny_type" select_payment_type&ndash;&gt;
+
+     </RelativeLayout>-->
+
+    <!-- <RelativeLayout
+         android:id="@+id/relative_car_info"
+         android:layout_width="match_parent"
+         android:layout_height="?android:attr/actionBarSize"
+         android:layout_above="@+id/fare_promo_layouy"
+
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="10dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginEnd="10dp"
+         android:background="@drawable/payment_type_selector"
+         android:clickable="true"
+         android:visibility="visible" >&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;
+
+          <ImageView
+              android:id="@+id/car_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:layout_centerVertical="true"
+              />
+
+         <TextView
+             android:id="@+id/car_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/car_image"
+             android:layout_centerVertical="true"
+             android:text="@string/cash"
+             android:textColor="@color/black"
+             android:textSize="20sp" />
+         &lt;!&ndash; android:text="@string/paymeny_type" select_payment_type&ndash;&gt;
+
+     </RelativeLayout>-->
+
+
+    <Button
+        android:id="@+id/request_pick_up_here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/req_lay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/requestpick_shape"
+        android:text="@string/request_pickup"
+        android:textColor="@drawable/white_to_black_text"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/driver_confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/driver_eta_bg"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/driverinfo"
+            layout="@layout/driver_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/address_bar_selector"
+        android:clickable="true"
+        android:visibility="gone">
+
+
+
+            <ImageButton
+                android:id="@+id/img_pick_up"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/txt_pickup_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/img_pick_up"
+            android:layout_toRightOf="@+id/img_pick_up"
+            android:text="@string/pickup_location"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/booking_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+           android:layout_toRightOf="@+id/img_pick_up"
+            android:layout_centerVertical="true"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/driver_on_the_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/driver_conformation_bg"
+        android:text="@string/driver_on_the_way"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <!-- <RelativeLayout
+         android:id="@+id/choose_payment_screen"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#80000000"
+         android:clickable="true"
+         android:visibility="visible" >
+
+         <Button
+             android:id="@+id/payment_cancel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_marginLeft="10dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginEnd="10dp"
+             android:background="@drawable/cancel_share"
+             android:text="@string/cancel"
+             android:textColor="#007aff"
+             android:textSize="20sp" />
+
+         <Button
+             android:id="@+id/payment_card"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/payment_cancel"
+             android:layout_marginBottom="10dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginEnd="10dp"
+             android:background="@drawable/cancel_share"
+             android:text="@string/card"
+             android:textColor="#007aff"
+             android:textSize="20sp" />
+
+         <Button
+             android:id="@+id/payment_cash"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/payment_card"
+             android:layout_marginLeft="10dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginEnd="10dp"
+             android:background="@drawable/cancel_share"
+             android:text="@string/cash"
+             android:textColor="#007aff"
+             android:textSize="20sp" />
+     </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/choose_payment_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@+id/relative"
+            android:background="@drawable/back_ground">
+
+            <Button
+                android:id="@+id/payment_cancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/payment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="PAYMENT TYPE"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/payment_done"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="DONE"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F7F7F7">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+
+                android:layout_marginTop="50dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/payment_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/view"
+                android:background="@drawable/cancel_share"
+                android:text="CARD"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/payment_card"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/payment_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment_card"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cancel_share"
+                android:text="CASH"
+                android:textColor="#000000"
+
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

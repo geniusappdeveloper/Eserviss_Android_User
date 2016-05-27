@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roadyo_bg">
+    <!-- <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/splahs_text"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        /> -->
+
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+         android:visibility="gone"
+        android:id="@+id/login_buttons">
+      <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roadyo_btn_or"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+     <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:text="@string/sign_in"
+        android:background="@drawable/selector_for_loginbutton"
+       />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_toRightOf="@+id/signin"
+        android:text="@string/register"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/selector_for_signupbutton"
+        />
+    </RelativeLayout> 
+    </RelativeLayout>
+
+</RelativeLayout>
